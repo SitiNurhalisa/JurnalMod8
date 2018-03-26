@@ -35,7 +35,20 @@ public class Jurnal {
             System.out.print(feb[i] + " ");
             
         }
-        System.out.println("Terimakasih");
+        for (int j = 0; j < feb.length-1; j++) {
+            for (int k = 0; k < feb.length-1; k++) {
+                if(feb[k] < feb[k+1]){
+                    int temp = feb[k];
+                    feb[k] = feb[k+1];
+                    feb[k+1] = temp;
+                }
+            }
+        }
+        System.out.println("Deret : ");
+        for (int i = 0; i < feb.length; i++) {
+            System.out.print(feb[i] + " ");
+            
+        }
     }
     
 }
