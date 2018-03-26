@@ -35,6 +35,7 @@ public class Jurnal {
             System.out.print(feb[i] + " ");
             
         }
+        System.out.println("Terimakasih");
     }
     
 }
